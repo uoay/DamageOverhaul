@@ -1,0 +1,21 @@
+build/
+run/
+
+# IDEA
+.idea/
+
+# Eclipse
+.settings/
+bin/
+.classpath
+.project
+*.launch
+
+# VSCode
+.vscode/
+
+# macOS
+*.DS_Store
+
+# Gradle
+.gradle/
