@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "id": "damage_overhaul",
+    "version": "${version}",
+    "name": "Damage Overhaul",
+    "description": "",
+    "authors": [
+        "uoay"
+    ],
+    "license": "LGPL-3.0-only",
+    "icon": "assets/damage_overhaul/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.uoay.damageoverhaul.DamageOverhaul"
+        ],
+        "fabric-datagen": [
+            "net.uoay.damageoverhaul.datagen.DamageOverhaulDataGenerator"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.16.10",
+        "minecraft": "~1.21.5",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}

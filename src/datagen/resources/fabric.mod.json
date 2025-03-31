@@ -1,0 +1,10 @@
+{
+    "schemaVersion": 1,
+    "id": "damage_overhaul-datagen",
+    "version": "${version}",
+    "entrypoints": {
+        "fabric-datagen": [
+            "net.uoay.damageoverhaul.datagen.DamageOverhaulDataGenerator"
+        ]
+    }
+}
