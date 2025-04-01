@@ -6,6 +6,7 @@ import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.DamageTypeTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,6 +23,7 @@ public class DamageTypeTagProvider extends FabricTagProvider<DamageType> {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         configureIsPhysical();
+        configureIsMagic();
     }
 
     private void configureIsPhysical() {
@@ -41,5 +43,10 @@ public class DamageTypeTagProvider extends FabricTagProvider<DamageType> {
             .add(DamageTypes.ARROW)
             .add(DamageTypes.TRIDENT)
             .add(DamageTypes.MOB_PROJECTILE);
+    }
+
+    private void configureIsMagic() {
+        getOrCreateTagBuilder(IS_MAGIC)
+            .forceAddTag(DamageTypeTags.WITCH_RESISTANT_TO);
     }
 }
