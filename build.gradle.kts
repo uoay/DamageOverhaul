@@ -16,6 +16,7 @@ loom {
     mods {
         create(base.archivesName.get()) {
             sourceSet(sourceSets["main"])
+            sourceSet(sourceSets["client"])
         }
     }
 }

@@ -14,10 +14,16 @@
         "main": [
             "net.uoay.damageoverhaul.DamageOverhaul"
         ],
+        "client": [
+            "net.uoay.damageoverhaul.DamageOverhaulClient"
+        ],
         "fabric-datagen": [
             "net.uoay.damageoverhaul.datagen.DamageOverhaulDataGenerator"
         ]
     },
+    "mixins": [
+        "damage_overhaul.mixins.json"
+    ],
     "depends": {
         "fabricloader": ">=0.16.10",
         "minecraft": "~1.21.5",

@@ -8,5 +8,7 @@ public class DamageOverhaulDataGenerator implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         var pack = fabricDataGenerator.createPack();
         pack.addProvider(DamageTypeTagProvider::new);
+        pack.addProvider(ChineseLanguageProvider::new);
+        pack.addProvider(EnglishLanguageProvider::new);
     }
 }
