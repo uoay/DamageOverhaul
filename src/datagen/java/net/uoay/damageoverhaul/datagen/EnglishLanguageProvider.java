@@ -24,10 +24,16 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             EntityAttributeIdentifiers.SLASH_ABSORPTION, "Slash Absorption"
         );
+        translationBuilder.add(
+            EntityAttributeIdentifiers.STRIKE_ABSORPTION, "Strike Absorption"
+        );
 
         translationBuilder.add(PlainTranslationKeys.DAMAGE_DETAILS, "Damage Details");
         translationBuilder.add(
             PlainTranslationKeys.SLASH_PROPORTION, "Slash Proportion %1$s"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.STRIKE_PROPORTION, "Strike Proportion %1$s"
         );
     }
 }

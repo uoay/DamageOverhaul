@@ -13,14 +13,21 @@ import net.uoay.damageoverhaul.PlainTranslationKeys;
 
 import java.util.function.Consumer;
 
-public record DamageDetailsComponent(float slashProportion) implements TooltipAppender {
+public record DamageDetailsComponent(
+    float slashProportion,
+    float strikeProportion
+) implements TooltipAppender {
     public static final Codec<DamageDetailsComponent> CODEC = RecordCodecBuilder.create(instance ->
         instance
             .group(
                 Codec
                     .floatRange(0.0F, 1.0F)
                     .fieldOf("slashProportion")
-                    .forGetter(DamageDetailsComponent::slashProportion)
+                    .forGetter(DamageDetailsComponent::slashProportion),
+                Codec
+                    .floatRange(0.0F, 1.0F)
+                    .fieldOf("strikeProportion")
+                    .forGetter(DamageDetailsComponent::strikeProportion)
             )
             .apply(instance, DamageDetailsComponent::new)
     );
@@ -38,10 +45,16 @@ public record DamageDetailsComponent(float slashProportion) implements TooltipAp
                 .append(":")
                 .formatted(Formatting.GRAY)
         );
-        if (this.slashProportion != 0) {
+        if (this.slashProportion != 0.0F) {
             textConsumer.accept(ScreenTexts.space().append(Text.translatable(
                 PlainTranslationKeys.SLASH_PROPORTION,
                 this.slashProportion * 100 + "%"
+            )).formatted(Formatting.DARK_GRAY));
+        }
+        if (this.strikeProportion != 0.0F) {
+            textConsumer.accept(ScreenTexts.space().append(Text.translatable(
+                PlainTranslationKeys.STRIKE_PROPORTION,
+                this.strikeProportion * 100 + "%"
             )).formatted(Formatting.DARK_GRAY));
         }
     }

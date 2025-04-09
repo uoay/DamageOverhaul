@@ -16,6 +16,13 @@ public class EntityAttributes {
             0.0, -5.0, 1.0
         ).setTracked(true)
     );
+    public static final RegistryEntry<EntityAttribute> STRIKE_ABSORPTION = register(
+        EntityAttributeIdentifiers.STRIKE_ABSORPTION,
+        new ClampedEntityAttribute(
+            EntityAttributeIdentifiers.STRIKE_ABSORPTION.toTranslationKey(),
+            0.0, -5.0, 1.0
+        ).setTracked(true)
+    );
 
     private static RegistryEntry<EntityAttribute> register(
         Identifier id,

@@ -18,10 +18,16 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             EntityAttributeIdentifiers.SLASH_ABSORPTION, "斩击吸收"
         );
+        translationBuilder.add(
+            EntityAttributeIdentifiers.STRIKE_ABSORPTION, "打击吸收"
+        );
 
         translationBuilder.add(PlainTranslationKeys.DAMAGE_DETAILS, "伤害详情");
         translationBuilder.add(
             PlainTranslationKeys.SLASH_PROPORTION, "斩击占比 %1$s"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.STRIKE_PROPORTION, "打击占比 %1$s"
         );
     }
 }

@@ -16,6 +16,7 @@ public abstract class LivingEntityMixin {
     ) {
         info
             .getReturnValue()
-            .add(EntityAttributes.SLASH_ABSORPTION, -0.15);
+            .add(EntityAttributes.SLASH_ABSORPTION, -0.15)
+            .add(EntityAttributes.STRIKE_ABSORPTION, -0.15);
     }
 }

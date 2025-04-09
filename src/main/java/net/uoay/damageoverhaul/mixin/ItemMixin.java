@@ -47,6 +47,7 @@ public abstract class ItemMixin {
         @Local(argsOnly = true) ArmorMaterial material,
         @Local(argsOnly = true) EquipmentType type
     ) {
+        var equipmentSlot = AttributeModifierSlot.forEquipmentSlot(type.getEquipmentSlot());
         return attributeModifiersComponent
             .with(
                 EntityAttributes.SLASH_ABSORPTION,
@@ -55,7 +56,16 @@ public abstract class ItemMixin {
                     material.defense().getOrDefault(type, 0) * 0.01,
                     EntityAttributeModifier.Operation.ADD_VALUE
                 ),
-                AttributeModifierSlot.forEquipmentSlot(type.getEquipmentSlot())
+                equipmentSlot
+            )
+            .with(
+                EntityAttributes.STRIKE_ABSORPTION,
+                new EntityAttributeModifier(
+                    AttributeModifierIdentifiers.STRIKE_ABSORPTION,
+                    material.defense().getOrDefault(type, 0) * 0.01,
+                    EntityAttributeModifier.Operation.ADD_VALUE
+                ),
+                equipmentSlot
             );
     }
 }

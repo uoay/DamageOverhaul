@@ -19,6 +19,8 @@ public class Utils {
         double sum = 0.0F;
         float part = details.slashProportion() * original;
         sum += (part * (1 - attributes.getValue(EntityAttributes.SLASH_ABSORPTION)));
+        part = details.strikeProportion() * original;
+        sum += (part * (1 - attributes.getValue(EntityAttributes.STRIKE_ABSORPTION)));
         return (float) sum;
     }
 }
