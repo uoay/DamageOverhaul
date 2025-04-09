@@ -66,6 +66,15 @@ public abstract class ItemMixin {
                     EntityAttributeModifier.Operation.ADD_VALUE
                 ),
                 equipmentSlot
+            )
+            .with(
+                EntityAttributes.THRUST_ABSORPTION,
+                new EntityAttributeModifier(
+                    AttributeModifierIdentifiers.THRUST_ABSORPTION,
+                    material.defense().getOrDefault(type, 0) * 0.01,
+                    EntityAttributeModifier.Operation.ADD_VALUE
+                ),
+                equipmentSlot
             );
     }
 }

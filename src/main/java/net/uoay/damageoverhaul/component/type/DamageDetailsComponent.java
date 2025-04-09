@@ -15,7 +15,8 @@ import java.util.function.Consumer;
 
 public record DamageDetailsComponent(
     float slashProportion,
-    float strikeProportion
+    float strikeProportion,
+    float thrustProportion
 ) implements TooltipAppender {
     public static final Codec<DamageDetailsComponent> CODEC = RecordCodecBuilder.create(instance ->
         instance
@@ -27,7 +28,11 @@ public record DamageDetailsComponent(
                 Codec
                     .floatRange(0.0F, 1.0F)
                     .fieldOf("strikeProportion")
-                    .forGetter(DamageDetailsComponent::strikeProportion)
+                    .forGetter(DamageDetailsComponent::strikeProportion),
+                Codec
+                    .floatRange(0.0F, 1.0F)
+                    .fieldOf("thrustProportion")
+                    .forGetter(DamageDetailsComponent::thrustProportion)
             )
             .apply(instance, DamageDetailsComponent::new)
     );
@@ -55,6 +60,12 @@ public record DamageDetailsComponent(
             textConsumer.accept(ScreenTexts.space().append(Text.translatable(
                 PlainTranslationKeys.STRIKE_PROPORTION,
                 this.strikeProportion * 100 + "%"
+            )).formatted(Formatting.DARK_GRAY));
+        }
+        if (this.thrustProportion != 0.0F) {
+            textConsumer.accept(ScreenTexts.space().append(Text.translatable(
+                PlainTranslationKeys.THRUST_PROPORTION,
+                this.thrustProportion * 100 + "%"
             )).formatted(Formatting.DARK_GRAY));
         }
     }

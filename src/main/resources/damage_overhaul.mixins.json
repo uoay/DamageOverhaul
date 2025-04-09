@@ -6,7 +6,9 @@
         "ItemMixin",
         "LivingEntityMixin",
         "PlayerEntityMixin",
-        "MaceItemMixin"
+        "MaceItemMixin",
+        "TridentItemMixin",
+        "TridentEntityMixin"
     ],
     "injectors": {
         "defaultRequire": 1

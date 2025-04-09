@@ -21,6 +21,8 @@ public class Utils {
         sum += (part * (1 - attributes.getValue(EntityAttributes.SLASH_ABSORPTION)));
         part = details.strikeProportion() * original;
         sum += (part * (1 - attributes.getValue(EntityAttributes.STRIKE_ABSORPTION)));
+        part = details.thrustProportion() * original;
+        sum += (part * (1 - attributes.getValue(EntityAttributes.THRUST_ABSORPTION)));
         return (float) sum;
     }
 }

@@ -21,6 +21,9 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             EntityAttributeIdentifiers.STRIKE_ABSORPTION, "打击吸收"
         );
+        translationBuilder.add(
+            EntityAttributeIdentifiers.THRUST_ABSORPTION, "刺击吸收"
+        );
 
         translationBuilder.add(PlainTranslationKeys.DAMAGE_DETAILS, "伤害详情");
         translationBuilder.add(
@@ -28,6 +31,9 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         );
         translationBuilder.add(
             PlainTranslationKeys.STRIKE_PROPORTION, "打击占比 %1$s"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.THRUST_PROPORTION, "刺击占比 %1$s"
         );
     }
 }

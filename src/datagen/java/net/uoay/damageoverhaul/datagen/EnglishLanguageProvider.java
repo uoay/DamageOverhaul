@@ -27,6 +27,9 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             EntityAttributeIdentifiers.STRIKE_ABSORPTION, "Strike Absorption"
         );
+        translationBuilder.add(
+            EntityAttributeIdentifiers.THRUST_ABSORPTION, "Thrust Absorption"
+        );
 
         translationBuilder.add(PlainTranslationKeys.DAMAGE_DETAILS, "Damage Details");
         translationBuilder.add(
@@ -34,6 +37,9 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         );
         translationBuilder.add(
             PlainTranslationKeys.STRIKE_PROPORTION, "Strike Proportion %1$s"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.THRUST_PROPORTION, "Thrust Proportion %1$s"
         );
     }
 }

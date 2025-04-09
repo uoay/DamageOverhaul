@@ -23,6 +23,13 @@ public class EntityAttributes {
             0.0, -5.0, 1.0
         ).setTracked(true)
     );
+    public static final RegistryEntry<EntityAttribute> THRUST_ABSORPTION = register(
+        EntityAttributeIdentifiers.THRUST_ABSORPTION,
+        new ClampedEntityAttribute(
+            EntityAttributeIdentifiers.THRUST_ABSORPTION.toTranslationKey(),
+            0.0, -5.0, 1.0
+        ).setTracked(true)
+    );
 
     private static RegistryEntry<EntityAttribute> register(
         Identifier id,
