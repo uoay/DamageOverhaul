@@ -3,12 +3,14 @@
     "package": "net.uoay.damageoverhaul.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "IronGolemEntityMixin",
         "ItemMixin",
         "LivingEntityMixin",
-        "PlayerEntityMixin",
         "MaceItemMixin",
-        "TridentItemMixin",
-        "TridentEntityMixin"
+        "MobEntityMixin",
+        "PlayerEntityMixin",
+        "TridentEntityMixin",
+        "TridentItemMixin"
     ],
     "injectors": {
         "defaultRequire": 1
