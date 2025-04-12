@@ -7,6 +7,10 @@
     "authors": [
         "uoay"
     ],
+    "contact": {
+        "sources": "https://github.com/uoay/DamageOverhaul",
+        "issues": "https://github.com/uoay/DamageOverhaul/issues"
+    },
     "license": "LGPL-3.0-only",
     "icon": "assets/damage_overhaul/icon.png",
     "environment": "*",
@@ -19,15 +23,26 @@
         ],
         "fabric-datagen": [
             "net.uoay.damageoverhaul.datagen.DamageOverhaulDataGenerator"
+        ],
+        "modmenu": [
+            "net.uoay.damageoverhaul.menu.ModMenuApiImpl"
         ]
     },
+
     "mixins": [
-        "damage_overhaul.mixins.json"
+        "damage_overhaul.mixins.json",
+        "damage_overhaul.attribute.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=0.16.10",
         "minecraft": "~1.21.5",
         "java": ">=21",
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "cloth-config": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "update_checker": false
+        }
     }
 }

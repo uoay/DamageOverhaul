@@ -5,7 +5,6 @@
     "mixins": [
         "IronGolemEntityMixin",
         "ItemMixin",
-        "LivingEntityMixin",
         "MaceItemMixin",
         "MobEntityMixin",
         "PlayerEntityMixin",

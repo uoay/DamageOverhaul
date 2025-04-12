@@ -8,7 +8,13 @@ base {
     archivesName = project.properties["archives_base_name"].toString()
 }
 
-repositories {}
+repositories {
+    maven {
+        name = "Terraformers"
+        url = uri("https://maven.terraformersmc.com/")
+    }
+    maven { url = uri("https://maven.shedaniel.me/") }
+}
 
 loom {
     splitEnvironmentSourceSets()
@@ -27,6 +33,8 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project.properties["loader_version"]}")
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.properties["fabric_api"]}")
+    modApi("com.terraformersmc:modmenu:${project.properties["modmenu"]}")
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${project.properties["cloth_config"]}")
 }
 
 fabricApi {

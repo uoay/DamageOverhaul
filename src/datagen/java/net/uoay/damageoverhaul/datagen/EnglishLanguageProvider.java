@@ -21,6 +21,8 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         RegistryWrapper.WrapperLookup registryLookup,
         TranslationBuilder translationBuilder
     ) {
+        generateConfigTranslations(translationBuilder);
+
         translationBuilder.add(
             EntityAttributeIdentifiers.SLASH_ABSORPTION, "Slash Absorption"
         );
@@ -40,6 +42,31 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         );
         translationBuilder.add(
             PlainTranslationKeys.THRUST_PROPORTION, "Thrust Proportion %1$s"
+        );
+    }
+
+    public void generateConfigTranslations(TranslationBuilder translationBuilder) {
+        translationBuilder.add(PlainTranslationKeys.CONFIG_TITLE, "Damage Overhaul Options");
+        translationBuilder.add(
+            PlainTranslationKeys.CATEGORY_COMMON, "Common"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "Display Damage Proportion"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "Damage Absorption"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.OPTION_ZOMBIE, "Zombie"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.OPTION_ZOMBIE_SLASH, "Slash"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.OPTION_ZOMBIE_STRIKE, "Strike"
+        );
+        translationBuilder.add(
+            PlainTranslationKeys.OPTION_ZOMBIE_THRUST, "Thrust"
         );
     }
 }

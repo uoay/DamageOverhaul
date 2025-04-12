@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "net.uoay.damageoverhaul.mixin.attribute",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "LivingEntityMixin",
+        "ZombieEntityMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

@@ -9,12 +9,20 @@ import net.uoay.damageoverhaul.entity.attribute.EntityAttributeIdentifiers;
 import java.util.concurrent.CompletableFuture;
 
 public class ChineseLanguageProvider extends FabricLanguageProvider {
-    protected ChineseLanguageProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    protected ChineseLanguageProvider(
+        FabricDataOutput dataOutput,
+        CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup
+    ) {
         super(dataOutput, "zh_cn", registryLookup);
     }
 
     @Override
-    public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
+    public void generateTranslations(
+        RegistryWrapper.WrapperLookup registryLookup,
+        TranslationBuilder translationBuilder
+    ) {
+        generateConfigTranslations(translationBuilder);
+
         translationBuilder.add(
             EntityAttributeIdentifiers.SLASH_ABSORPTION, "斩击吸收"
         );
@@ -35,5 +43,16 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             PlainTranslationKeys.THRUST_PROPORTION, "刺击占比 %1$s"
         );
+    }
+
+    public void generateConfigTranslations(TranslationBuilder translationBuilder) {
+        translationBuilder.add(PlainTranslationKeys.CONFIG_TITLE, "伤害大修选项");
+        translationBuilder.add(PlainTranslationKeys.CATEGORY_COMMON, "常规");
+        translationBuilder.add(PlainTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "显示伤害占比");
+        translationBuilder.add(PlainTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "伤害吸收");
+        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE, "僵尸");
+        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_SLASH, "斩击");
+        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_STRIKE, "打击");
+        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_THRUST, "刺击");
     }
 }
