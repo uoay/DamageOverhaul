@@ -30,8 +30,7 @@
     },
 
     "mixins": [
-        "damage_overhaul.mixins.json",
-        "damage_overhaul.attribute.mixins.json"
+        "damage_overhaul.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=0.16.10",

@@ -2,6 +2,8 @@ package net.uoay.damageoverhaul.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.uoay.damageoverhaul.datagen.lang.ChineseLanguageProvider;
+import net.uoay.damageoverhaul.datagen.lang.EnglishLanguageProvider;
 
 public class DamageOverhaulDataGenerator implements DataGeneratorEntrypoint {
     @Override

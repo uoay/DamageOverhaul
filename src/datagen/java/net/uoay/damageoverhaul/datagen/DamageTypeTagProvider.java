@@ -10,7 +10,8 @@ import net.minecraft.registry.tag.DamageTypeTags;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.uoay.damageoverhaul.registry.tag.DamageTypeTags.*;
+import static net.uoay.damageoverhaul.registry.tag.DamageTypeTags.IS_MAGIC;
+import static net.uoay.damageoverhaul.registry.tag.DamageTypeTags.IS_PHYSICAL;
 
 public class DamageTypeTagProvider extends FabricTagProvider<DamageType> {
     public DamageTypeTagProvider(

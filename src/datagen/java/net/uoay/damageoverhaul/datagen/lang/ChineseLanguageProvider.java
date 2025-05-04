@@ -1,4 +1,4 @@
-package net.uoay.damageoverhaul.datagen;
+package net.uoay.damageoverhaul.datagen.lang;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -9,7 +9,7 @@ import net.uoay.damageoverhaul.entity.attribute.EntityAttributeIdentifiers;
 import java.util.concurrent.CompletableFuture;
 
 public class ChineseLanguageProvider extends FabricLanguageProvider {
-    protected ChineseLanguageProvider(
+    public ChineseLanguageProvider(
         FabricDataOutput dataOutput,
         CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup
     ) {
@@ -22,7 +22,6 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         TranslationBuilder translationBuilder
     ) {
         generateConfigTranslations(translationBuilder);
-
         translationBuilder.add(
             EntityAttributeIdentifiers.SLASH_ABSORPTION, "斩击吸收"
         );
@@ -32,7 +31,6 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(
             EntityAttributeIdentifiers.THRUST_ABSORPTION, "刺击吸收"
         );
-
         translationBuilder.add(PlainTranslationKeys.DAMAGE_DETAILS, "伤害详情");
         translationBuilder.add(
             PlainTranslationKeys.SLASH_PROPORTION, "斩击占比 %1$s"
@@ -46,13 +44,26 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
     }
 
     public void generateConfigTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add(PlainTranslationKeys.CONFIG_TITLE, "伤害大修选项");
-        translationBuilder.add(PlainTranslationKeys.CATEGORY_COMMON, "常规");
-        translationBuilder.add(PlainTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "显示伤害占比");
-        translationBuilder.add(PlainTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "伤害吸收");
-        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE, "僵尸");
-        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_SLASH, "斩击");
-        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_STRIKE, "打击");
-        translationBuilder.add(PlainTranslationKeys.OPTION_ZOMBIE_THRUST, "刺击");
+        translationBuilder.add(ConfigTranslationKeys.CONFIG_TITLE, "伤害大修选项");
+        translationBuilder.add(ConfigTranslationKeys.CATEGORY_COMMON, "常规");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "显示伤害占比");
+        translationBuilder.add(ConfigTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "伤害吸收");
+
+        // TODO translate entity name
+
+        var slashTranslationKeys = ConfigTranslationKeys.getSlashTranslationKeys();
+        for (var key : slashTranslationKeys) {
+            translationBuilder.add(key, "斩击");
+        }
+
+        var strikeTranslationKeys = ConfigTranslationKeys.getStrikeTranslationKeys();
+        for (var key : strikeTranslationKeys) {
+            translationBuilder.add(key, "刺击");
+        }
+
+        var thrustTranslationKeys = ConfigTranslationKeys.getThrustTranslationKeys();
+        for (var key : thrustTranslationKeys) {
+            translationBuilder.add(key, "打击");
+        }
     }
 }

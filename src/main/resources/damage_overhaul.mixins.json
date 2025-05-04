@@ -3,8 +3,10 @@
     "package": "net.uoay.damageoverhaul.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "DefaultAttributeContainerAccessor",
         "IronGolemEntityMixin",
         "ItemMixin",
+        "LivingEntityMixin",
         "MaceItemMixin",
         "MobEntityMixin",
         "PlayerEntityMixin",

@@ -1,15 +1,16 @@
-package net.uoay.damageoverhaul.datagen;
+package net.uoay.damageoverhaul.datagen.lang;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Language;
 import net.uoay.damageoverhaul.PlainTranslationKeys;
 import net.uoay.damageoverhaul.entity.attribute.EntityAttributeIdentifiers;
 
 import java.util.concurrent.CompletableFuture;
 
 public class EnglishLanguageProvider extends FabricLanguageProvider {
-    protected EnglishLanguageProvider(
+    public EnglishLanguageProvider(
         FabricDataOutput dataOutput,
         CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup
     ) {
@@ -46,27 +47,39 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
     }
 
     public void generateConfigTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add(PlainTranslationKeys.CONFIG_TITLE, "Damage Overhaul Options");
+        translationBuilder.add(ConfigTranslationKeys.CONFIG_TITLE, "Damage Overhaul Options");
         translationBuilder.add(
-            PlainTranslationKeys.CATEGORY_COMMON, "Common"
+            ConfigTranslationKeys.CATEGORY_COMMON, "Common"
         );
         translationBuilder.add(
-            PlainTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "Display Damage Proportion"
+            ConfigTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "Display Damage Proportion"
         );
         translationBuilder.add(
-            PlainTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "Damage Absorption"
+            ConfigTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "Damage Absorption"
         );
-        translationBuilder.add(
-            PlainTranslationKeys.OPTION_ZOMBIE, "Zombie"
+
+        var language = Language.getInstance();
+        var entityTypes = ConfigTranslationKeys.getConfiguredEntityTypes();
+        entityTypes.forEach(entityType ->
+            translationBuilder.add(
+                ConfigTranslationKeys.ofOption(entityType.getUntranslatedName()),
+                language.get(entityType.getTranslationKey())
+            )
         );
-        translationBuilder.add(
-            PlainTranslationKeys.OPTION_ZOMBIE_SLASH, "Slash"
-        );
-        translationBuilder.add(
-            PlainTranslationKeys.OPTION_ZOMBIE_STRIKE, "Strike"
-        );
-        translationBuilder.add(
-            PlainTranslationKeys.OPTION_ZOMBIE_THRUST, "Thrust"
-        );
+
+        var slashTranslationKeys = ConfigTranslationKeys.getSlashTranslationKeys();
+        for (var key : slashTranslationKeys) {
+            translationBuilder.add(key, "Slash");
+        }
+
+        var strikeTranslationKeys = ConfigTranslationKeys.getStrikeTranslationKeys();
+        for (var key : strikeTranslationKeys) {
+            translationBuilder.add(key, "Strike");
+        }
+
+        var thrustTranslationKeys = ConfigTranslationKeys.getThrustTranslationKeys();
+        for (var key : thrustTranslationKeys) {
+            translationBuilder.add(key, "Thrust");
+        }
     }
 }
