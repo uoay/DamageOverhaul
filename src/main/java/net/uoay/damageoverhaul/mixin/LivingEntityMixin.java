@@ -18,6 +18,8 @@ public abstract class LivingEntityMixin {
             .getReturnValue()
             .add(EntityAttributes.SLASH_ABSORPTION, 0.0)
             .add(EntityAttributes.STRIKE_ABSORPTION, 0.0)
-            .add(EntityAttributes.THRUST_ABSORPTION, 0.0);
+            .add(EntityAttributes.THRUST_ABSORPTION, 0.0)
+            .add(EntityAttributes.FIRE_ABSORPTION, 0.0)
+            .add(EntityAttributes.LIGHTNING_ABSORPTION, 0.0);
     }
 }

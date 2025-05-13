@@ -24,589 +24,615 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig allay = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig armadillo = new DamageAbsorptionConfig(
-        0.2F, 0.15F, -0.2F
+        0.2F, 0.15F, -0.2F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig axolotl = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig bat = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig bee = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig blaze = new DamageAbsorptionConfig(
-        0.5F, 0.5F, 0.5F
+        0.5F, 0.5F, 0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig bogged = new DamageAbsorptionConfig(
-        -0.2F, -0.5F, 0.5F
+        -0.2F, -0.5F, 0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig breeze = new DamageAbsorptionConfig(
-        0.5F, 0.5F, 0.5F
+        0.5F, 0.5F, 0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig camel = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig cat = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig cave_spider = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig chicken = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig cod = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig cow = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig creaking = new DamageAbsorptionConfig(
-        -0.3F, -0.3F, -0.3F
+        -0.3F, -0.3F, -0.3F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig creeper = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig dolphin = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig donkey = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig drowned = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig elder_guardian = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig enderman = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig endermite = new DamageAbsorptionConfig(
-        0.0F, 0.0F, -0.2F
+        0.0F, 0.0F, -0.2F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig ender_dragon = new DamageAbsorptionConfig(
-        0.3F, 0.3F, 0.3F
+        0.3F, 0.3F, 0.3F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig evoker = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig fox = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig frog = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig ghast = new DamageAbsorptionConfig(
-        -0.1F, -0.2F, 0.0F
+        -0.1F, -0.2F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig giant = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig glow_squid = new DamageAbsorptionConfig(
-        -0.2F, -0.1F, 0.0F
+        -0.2F, -0.1F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig goat = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig guardian = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig hoglin = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig horse = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig husk = new DamageAbsorptionConfig(
-        0.0F, -0.2F, -0.2F
+        0.0F, -0.2F, -0.2F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig illusioner = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig iron_golem = new DamageAbsorptionConfig(
-        0.2F, 0.3F, 0.0F
+        0.2F, 0.3F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig llama = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig magma_cube = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig mooshroom = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig mule = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig ocelot = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig panda = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig parrot = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig phantom = new DamageAbsorptionConfig(
-        -0.2F, -0.2F, 0.0F
+        -0.2F, -0.2F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig pig = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig piglin = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig piglin_brute = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig pillager = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig player = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig polar_bear = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig pufferfish = new DamageAbsorptionConfig(
-        -0.2F, -0.2F, 0.0F
+        -0.2F, -0.2F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig rabbit = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig ravager = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig salmon = new DamageAbsorptionConfig(
-        -0.2F, -0.2F, 0.0F
+        -0.2F, -0.2F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig sheep = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig shulker = new DamageAbsorptionConfig(
-        0.2F, 0.2F, 0.0F
+        0.2F, 0.2F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig silverfish = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig skeleton = new DamageAbsorptionConfig(
-        0.3F, 0.5F, -0.5F
+        0.3F, 0.5F, -0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig skeleton_horse = new DamageAbsorptionConfig(
-        0.3F, 0.5F, -0.5F
+        0.3F, 0.5F, -0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig slime = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig sniffer = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig snow_golem = new DamageAbsorptionConfig(
-        0.2F, 0.2F, 0.2F
+        0.2F, 0.2F, 0.2F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig squid = new DamageAbsorptionConfig(
-        -0.2F, -0.1F, 0.0F
+        -0.2F, -0.1F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig spider = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig stray = new DamageAbsorptionConfig(
-        0.3F, 0.5F, -0.5F
+        0.3F, 0.5F, -0.5F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig strider = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig tadpole = new DamageAbsorptionConfig(
-        -0.2F, -0.1F, 0.0F
+        -0.2F, -0.1F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig trader_llama = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig tropical_fish = new DamageAbsorptionConfig(
-        -0.2F, -0.1F, 0.0F
+        -0.2F, -0.1F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig turtle = new DamageAbsorptionConfig(
-        0.2F, 0.2F, -0.2F
+        0.2F, 0.2F, -0.2F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig vex = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig villager = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig vindicator = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig wandering_trader = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig warden = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig witch = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig wither = new DamageAbsorptionConfig(
-        0.3F, 0.5F, -0.3F
+        0.3F, 0.5F, -0.3F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig wither_skeleton = new DamageAbsorptionConfig(
-        0.3F, 0.5F, -0.3F
+        0.3F, 0.5F, -0.3F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig wolf = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig zoglin = new DamageAbsorptionConfig(
-        0.0F, 0.0F, 0.0F
+        0.0F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig zombie = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig zombie_horse = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig zombie_villager = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
 
     @ConfigEntry.Category("damage_absorption")
     @ConfigEntry.Gui.CollapsibleObject
     @ConfigEntry.Gui.RequiresRestart
     public DamageAbsorptionConfig zombified_piglin = new DamageAbsorptionConfig(
-        -0.2F, 0.0F, 0.0F
+        -0.2F, 0.0F, 0.0F, 0.0F, 0.0F
     );
+
+    @ConfigEntry.Category("environment_damage")
+    public float fire_damage = 1.0F;
+
+    @ConfigEntry.Category("environment_damage")
+    public float lava_damage = 4.0F;
+
+    @ConfigEntry.Category("environment_damage")
+    public float lightning_damage = 5.0F;
+
+    @ConfigEntry.Category("environment_damage")
+    public float magma_block_damage = 5.0F;
+
+    @ConfigEntry.Category("environment_damage")
+    @ConfigEntry.Gui.RequiresRestart
+    public int campfire_damage = 1;
+
+    @ConfigEntry.Category("environment_damage")
+    @ConfigEntry.Gui.RequiresRestart
+    public int soul_campfire_damage = 2;
+
+    @ConfigEntry.Category("projectile")
+    public float fireball_damage = 6.0F;
+
+    @ConfigEntry.Category("projectile")
+    public float small_fireball_damage = 5.0F;
 
     public Map<EntityType<? extends LivingEntity>, DamageAbsorptionConfig> getConfiguredEntities() {
         var map = new HashMap<EntityType<? extends LivingEntity>, DamageAbsorptionConfig>();

@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "net.uoay.damageoverhaul.mixin.damage.environment",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "BlocksMixin",
+        "CampfireBlockMixin",
+        "EntityMixin",
+        "MagmaBlockMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

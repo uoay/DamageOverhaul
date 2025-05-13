@@ -1,4 +1,4 @@
-package net.uoay.damageoverhaul.mixin;
+package net.uoay.damageoverhaul.mixin.damage.projectile;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.minecraft.entity.Entity;

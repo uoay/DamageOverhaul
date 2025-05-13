@@ -17,6 +17,16 @@ public class ConfigTranslationKeys {
         "displayDamageProportion"
     );
     public static final String CATEGORY_DAMAGE_ABSORPTION = ofCategory("damage_absorption");
+    public static final String CATEGORY_ENVIRONMENT_DAMAGE = ofCategory("environment_damage");
+    public static final String OPTION_FIRE_DAMAGE = ofOption("fire_damage");
+    public static final String OPTION_LAVA_DAMAGE = ofOption("lava_damage");
+    public static final String OPTION_LIGHTNING_BOLT_DAMAGE = ofOption("lightning_damage");
+    public static final String OPTION_MAGMA_BLOCK_DAMAGE = ofOption("magma_block_damage");
+    public static final String OPTION_CAMPFIRE_DAMAGE = ofOption("campfire_damage");
+    public static final String OPTION_SOUL_CAMPFIRE_DAMAGE = ofOption("soul_campfire_damage");
+    public static final String CATEGORY_PROJECTILE = ofCategory("projectile");
+    public static final String OPTION_FIREBALL_DAMAGE = ofOption("fireball_damage");
+    public static final String OPTION_SMALL_FIREBALL_DAMAGE = ofOption("small_fireball_damage");
 
     public static String ofOption(String path) {
         return "text.autoconfig." + MOD_ID + ".option." + path;
@@ -58,6 +68,24 @@ public class ConfigTranslationKeys {
         var list = new ArrayList<String>();
         for (var entityType : entityTypes) {
             list.add(ofOption(entityType.getUntranslatedName()) + ".slash");
+        }
+        return list;
+    }
+
+    public static List<String> getFireTranslationKeys() {
+        var entityTypes = getConfiguredEntityTypes();
+        var list = new ArrayList<String>();
+        for (var entityType : entityTypes) {
+            list.add(ofOption(entityType.getUntranslatedName()) + ".fire");
+        }
+        return list;
+    }
+
+    public static List<String> getLightningTranslationKeys() {
+        var entityTypes = getConfiguredEntityTypes();
+        var list = new ArrayList<String>();
+        for (var entityType : entityTypes) {
+            list.add(ofOption(entityType.getUntranslatedName()) + ".lightning");
         }
         return list;
     }

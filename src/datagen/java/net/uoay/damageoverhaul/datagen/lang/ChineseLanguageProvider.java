@@ -48,6 +48,18 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ConfigTranslationKeys.CATEGORY_COMMON, "常规");
         translationBuilder.add(ConfigTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "显示伤害占比");
         translationBuilder.add(ConfigTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "伤害吸收");
+        translationBuilder.add(
+            ConfigTranslationKeys.CATEGORY_ENVIRONMENT_DAMAGE, "环境伤害"
+        );
+        translationBuilder.add(ConfigTranslationKeys.OPTION_FIRE_DAMAGE, "火焰伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_LAVA_DAMAGE, "岩浆伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_LIGHTNING_BOLT_DAMAGE, "闪电束伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_MAGMA_BLOCK_DAMAGE, "岩浆块伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_CAMPFIRE_DAMAGE, "营火伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_SOUL_CAMPFIRE_DAMAGE, "灵魂营火伤害");
+        translationBuilder.add(ConfigTranslationKeys.CATEGORY_PROJECTILE, "弹射物");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_FIREBALL_DAMAGE, "火球伤害");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_SMALL_FIREBALL_DAMAGE, "小火球伤害");
 
         // TODO translate entity name
 
@@ -64,6 +76,16 @@ public class ChineseLanguageProvider extends FabricLanguageProvider {
         var thrustTranslationKeys = ConfigTranslationKeys.getThrustTranslationKeys();
         for (var key : thrustTranslationKeys) {
             translationBuilder.add(key, "打击");
+        }
+
+        var fireTranslationKeys = ConfigTranslationKeys.getFireTranslationKeys();
+        for (var key : fireTranslationKeys) {
+            translationBuilder.add(key, "火焰");
+        }
+
+        var lightningTranslationKeys = ConfigTranslationKeys.getLightningTranslationKeys();
+        for (var key : lightningTranslationKeys) {
+            translationBuilder.add(key, "雷电");
         }
     }
 }

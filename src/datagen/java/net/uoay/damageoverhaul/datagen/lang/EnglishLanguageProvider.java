@@ -48,14 +48,32 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
 
     public void generateConfigTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ConfigTranslationKeys.CONFIG_TITLE, "Damage Overhaul Options");
-        translationBuilder.add(
-            ConfigTranslationKeys.CATEGORY_COMMON, "Common"
-        );
+        translationBuilder.add(ConfigTranslationKeys.CATEGORY_COMMON, "Common");
         translationBuilder.add(
             ConfigTranslationKeys.OPTION_DISPLAY_DAMAGE_PROPORTION, "Display Damage Proportion"
         );
         translationBuilder.add(
             ConfigTranslationKeys.CATEGORY_DAMAGE_ABSORPTION, "Damage Absorption"
+        );
+        translationBuilder.add(
+            ConfigTranslationKeys.CATEGORY_ENVIRONMENT_DAMAGE, "Environment Damage"
+        );
+        translationBuilder.add(ConfigTranslationKeys.OPTION_FIRE_DAMAGE, "Fire Damage");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_LAVA_DAMAGE, "Lava Damage");
+        translationBuilder.add(
+            ConfigTranslationKeys.OPTION_LIGHTNING_BOLT_DAMAGE, "Lightning Bolt Damage"
+        );
+        translationBuilder.add(
+            ConfigTranslationKeys.OPTION_MAGMA_BLOCK_DAMAGE, "Magma Block Damage"
+        );
+        translationBuilder.add(ConfigTranslationKeys.OPTION_CAMPFIRE_DAMAGE, "Campfire Damage");
+        translationBuilder.add(
+            ConfigTranslationKeys.OPTION_SOUL_CAMPFIRE_DAMAGE, "Soul Campfire Damage"
+        );
+        translationBuilder.add(ConfigTranslationKeys.CATEGORY_PROJECTILE, "Projectile");
+        translationBuilder.add(ConfigTranslationKeys.OPTION_FIREBALL_DAMAGE, "Fireball Damage");
+        translationBuilder.add(
+            ConfigTranslationKeys.OPTION_SMALL_FIREBALL_DAMAGE, "Small Fireball Damage"
         );
 
         var language = Language.getInstance();
@@ -80,6 +98,16 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         var thrustTranslationKeys = ConfigTranslationKeys.getThrustTranslationKeys();
         for (var key : thrustTranslationKeys) {
             translationBuilder.add(key, "Thrust");
+        }
+
+        var fireTranslationKeys = ConfigTranslationKeys.getFireTranslationKeys();
+        for (var key : fireTranslationKeys) {
+            translationBuilder.add(key, "Fire");
+        }
+
+        var lightningTranslationKeys = ConfigTranslationKeys.getLightningTranslationKeys();
+        for (var key : lightningTranslationKeys) {
+            translationBuilder.add(key, "Lightning");
         }
     }
 }

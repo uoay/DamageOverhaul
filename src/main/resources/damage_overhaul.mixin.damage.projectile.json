@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "net.uoay.damageoverhaul.mixin.damage.projectile",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "FireballEntityMixin",
+        "SmallFireballEntityMixin",
+        "TridentEntityMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

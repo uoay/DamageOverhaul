@@ -30,7 +30,9 @@
     },
 
     "mixins": [
-        "damage_overhaul.mixins.json"
+        "damage_overhaul.mixins.json",
+        "damage_overhaul.mixin.damage.environment.json",
+        "damage_overhaul.mixin.damage.projectile.json"
     ],
     "depends": {
         "fabricloader": ">=0.16.10",

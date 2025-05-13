@@ -10,10 +10,9 @@
         "MaceItemMixin",
         "MobEntityMixin",
         "PlayerEntityMixin",
-        "TridentEntityMixin",
         "TridentItemMixin"
     ],
     "injectors": {
         "defaultRequire": 1
-    }
+  }
 }

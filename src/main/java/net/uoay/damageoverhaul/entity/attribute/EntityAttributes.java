@@ -37,6 +37,20 @@ public class EntityAttributes {
             0.0, -5.0, 1.0
         ).setTracked(true)
     );
+    public static final RegistryEntry<EntityAttribute> FIRE_ABSORPTION = register(
+        EntityAttributeIdentifiers.FIRE_ABSORPTION,
+        new ClampedEntityAttribute(
+            EntityAttributeIdentifiers.FIRE_ABSORPTION.toTranslationKey(),
+            0.0, -5.0, 1.0
+        ).setTracked(true)
+    );
+    public static final RegistryEntry<EntityAttribute> LIGHTNING_ABSORPTION = register(
+        EntityAttributeIdentifiers.LIGHTNING_ABSORPTION,
+        new ClampedEntityAttribute(
+            EntityAttributeIdentifiers.LIGHTNING_ABSORPTION.toTranslationKey(),
+            0.0, -5.0, 1.0
+        ).setTracked(true)
+    );
 
     private static RegistryEntry<EntityAttribute> register(
         Identifier id,
@@ -58,6 +72,9 @@ public class EntityAttributes {
         builder.add(SLASH_ABSORPTION, damageAbsorptionConfig.slash);
         builder.add(STRIKE_ABSORPTION, damageAbsorptionConfig.strike);
         builder.add(THRUST_ABSORPTION, damageAbsorptionConfig.thrust);
+        builder.add(FIRE_ABSORPTION, damageAbsorptionConfig.fire);
+        builder.add(LIGHTNING_ABSORPTION, damageAbsorptionConfig.lightning);
+
         return builder.build();
     }
 
